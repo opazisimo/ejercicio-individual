@@ -1,0 +1,44 @@
+@mixin oscurito {
+	.oscuro {
+		background-color: rgba(0,0,0,0.7);
+		width: 100%;
+	}
+}
+
+@mixin mar-ud ($arriba, $abajo) {
+	margin-top: $arriba;
+	margin-bottom: $abajo;
+}
+
+@mixin mar-lr ($izq, $der) {
+	margin-left: $izq;
+	margin-right: $der;
+}
+@mixin pad-ud ($arriba, $abajo) {
+	padding-top: $arriba;
+	padding-bottom: $abajo;
+}
+
+@mixin pad-lr ($izq, $der) {
+	padding-left: $izq;
+	padding-right: $der;
+}
+
+@mixin letra ($porte, $color, $peso) {
+	font-family: 'Raleway', sans-serif;
+	font-size: $porte;
+	color: $color; 
+	font-weight: $peso;
+}
+
+@mixin titulos ($color) {
+	h1 {
+		font-family: 'Raleway', sans-serif;
+		color: $color;
+		font-size:36px;
+	}
+	hr {
+		border: 1px solid $color;
+		width: 50px;
+	}
+}

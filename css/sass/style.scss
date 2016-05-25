@@ -1,0 +1,80 @@
+#header {
+	background-color: $gris-cla;
+
+	.navbar {
+		border: 0px;
+	}
+}
+body {
+	padding: 0px !important;
+	.fondo{
+	  background-size: cover;
+	}
+	.fondo-fixed{
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	}
+	.fondo-1 {
+	  background-image: url(../images/back-lock.jpg);
+	  z-index: -1 !important;
+	}
+	.modulo-alto {
+	  padding: 1em;
+	  min-height: 100vh;
+	  text-align: center;
+	}
+	.oscuro {
+		z-index: 0 !important;
+		width: 100%;
+	}
+	.transparente {
+		background-color: transparent;
+		z-index: 3 !important;
+	}
+}
+#llax {
+	@include pad-ud (0px, 0px);
+	@include oscurito;
+	h1 {
+		@include letra (50px, $whi, bolder);
+		@include mar-ud (300px, 50px);
+	}
+	p {
+		@include letra (16px, $whi, normal);
+		@include mar-ud (0px, 300px);
+	}
+
+
+}
+#textoind {
+	@include mar-ud (150px, 150px);
+	@include titulos ($gris-tibtn);
+	p {
+		@include letra (12px, $gris-tex, normal);
+	}
+	.titulo {
+		@include letra (12px, $gris-tibtn, bolder);
+	}
+	.p-normal {
+		@include mar-ud (50px, 50px);
+	}
+	.espacios {
+		@include mar-ud (30px, 0px);
+	}
+}
+#video {
+	background-image: url(../images/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include titulos ($whi);
+	@include oscurito;
+	.oscuro {
+		@include pad-ud (100px, 100px);
+	}
+	.p-normal {
+		@include mar-ud (50px, 50px);
+		@include letra (12px, $whi, normal);
+	}
+}
