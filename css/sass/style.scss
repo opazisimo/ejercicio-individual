@@ -65,6 +65,9 @@ body {
 	.espacios {
 		@include mar-ud (30px, 0px);
 	}
+	.fa {
+		font-size: 50px;
+	}
 }
 #video {
 	padding:0px !important;
@@ -237,6 +240,7 @@ footer {
 
 			a {
 				color: $gris-osc;
+				font-size: 16px;
 			}
 		}
 	}
