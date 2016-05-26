@@ -222,5 +222,22 @@ body {
 	}
 }
 footer {
-	
+	@include pad-ud (20px, 20px);
+	background-color: $gris-cla;
+	text-align: center;
+	@include letra (12px, $gris-osc, normal);
+	p {
+		@include mar-ud (40px, 20px);
+	}
+	.iconos {
+		@include mar-ud (40px, 20px);
+		li {
+			display: inline;
+			margin-right: 10px;
+
+			a {
+				color: $gris-osc;
+			}
+		}
+	}
 }
