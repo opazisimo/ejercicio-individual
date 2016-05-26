@@ -2,6 +2,9 @@
 	.oscuro {
 		background-color: rgba(0,0,0,0.7);
 		width: 100%;
+	  padding: 1em;
+	  min-height: 100vh;
+	  text-align: center;
 	}
 }
 
@@ -41,4 +44,46 @@
 		border: 1px solid $color;
 		width: 50px;
 	}
+}
+
+@mixin backs {
+	background-position: center;
+	background-repeat: no-repeat;
+	height:300px;
+}
+
+@mixin contenidos {
+	padding:40px;
+	strong {
+		@include letra (14px, $gris-tibtn, bolder);
+	}
+	.cargo {
+		@include letra (12px, $gris-osc, normal);
+	}
+	p {
+		@include letra (12px, $gris-tibtn, normal);
+		line-height: 2;
+	}
+}
+
+@mixin offer {
+	text-align: center;
+	background-color: $gris-offer;
+	.prev {
+		color: $gris-osc;
+	}
+	.titularisimo {
+		color: $gris-tibtn;
+	}
+	.fa {
+		font-size: 60px;
+	}
+	.bordes {
+		@include mar-ud (0px, 20px);
+	}
+}
+
+@mixin blanquear {
+	border: 1px solid $whi !important;
+	background-color: $whi;
 }

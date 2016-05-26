@@ -18,23 +18,26 @@ body {
 	.fondo-1 {
 	  background-image: url(../images/back-lock.jpg);
 	  z-index: -1 !important;
+		.oscuro {
+			z-index: 0 !important;
+			width: 100%;
+		}
+	}
+	.fondo-2 {
+	  background-image: url(../images/bg3.jpg);
+	  z-index: -1 !important;
+	  .oscuro {
+			z-index: 0 !important;
+		}
 	}
 	.modulo-alto {
 	  padding: 1em;
 	  min-height: 100vh;
 	  text-align: center;
 	}
-	.oscuro {
-		z-index: 0 !important;
-		width: 100%;
-	}
-	.transparente {
-		background-color: transparent;
-		z-index: 3 !important;
-	}
 }
 #llax {
-	@include pad-ud (0px, 0px);
+	padding: 0px !important;
 	@include oscurito;
 	h1 {
 		@include letra (50px, $whi, bolder);
@@ -64,17 +67,160 @@ body {
 	}
 }
 #video {
-	background-image: url(../images/bg3.jpg);
+	padding:0px !important;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	@include titulos ($whi);
 	@include oscurito;
-	.oscuro {
-		@include pad-ud (100px, 100px);
-	}
 	.p-normal {
 		@include mar-ud (50px, 50px);
 		@include letra (12px, $whi, normal);
 	}
+	video {
+		width: 100%;
+	}
+	.titles {
+		text-align: left;
+	}
+	.contis {
+		@include mar-ud (150px, 150px);
+	}
+}
+#define {
+	@include mar-ud (150px, 150px);
+	.fotosuno {
+		background-image: url(../images/member7.jpg);
+		background-size: cover;
+		@include backs;
+	}
+	.fotosdos {
+		background-image: url(../images/member8.jpg);
+		background-size: cover;
+		@include backs;
+	}
+	.fotostres {
+		background-image: url(../images/member9.jpg);
+		background-size: cover;
+		@include backs;
+	}
+	.fotoscuatro {
+		background-image: url(../images/member10.jpg);
+		background-size: cover;
+		@include backs;
+	}
+	.contenido {
+		@include contenidos;
+	}
+	.titu {
+		@include titulos ($gris-tibtn);
+		@include mar-ud (0px, 50px);
+	}
+	.derecha {
+		text-align: right;
+	}
+	.iconos {
+		li {
+			display: inline;
+			margin-right: 10px;
+
+			a {
+				color: $gris-osc;
+			}
+		}
+	}
+	.foto {
+		padding: 0px !important;
+		.blanco {
+			height:300px;
+			width: 100%;
+			&:hover {
+				background-color: $whi;
+				opacity: 0.5;
+			}
+		}
+	}
+}
+#bestoffers {
+	.titu {
+		@include titulos ($gris-tibtn);
+		@include mar-ud (0px, 50px);
+	}
+	.oferta {
+		@include offer;
+	}
+}
+#contact {
+	@include mar-ud (0px, 100px);
+	.titu {
+		@include titulos ($gris-tibtn);
+	}
+	.p-normal {
+		@include mar-ud (50px, 50px);
+		@include letra (12px, $gris-tex, normal);
+	}
+	form {
+		input {
+			@include mar-ud (20px, 0px);
+		}
+		textarea {
+			@include mar-ud (20px, 0px);
+			resize:none;
+		}
+		button {
+			@include mar-ud (20px, 0px);
+			background-color: $gris-tibtn;
+			color: $whi;
+		}
+	}
+	.sides {
+		p {
+			@include letra (12px, $gris-tex, normal);
+		}
+		strong {
+			@include letra (12px, $gris-tex, bolder);
+		}
+		ul {
+			position: relative;
+			right:40px;
+			li {
+				display: inline;
+				a {
+					@include letra (16px, $gris-tex, normal);
+					@include mar-lr (0px, 15px);
+				}
+			}
+		}
+		.colapso {
+			@include mar-ud (30px, 0px);
+			@include letra (12px, $gris-tex, normal);
+			a {
+				font-size: 10px;
+				color: $whi;
+				padding: 5px;
+				background-color: $gris-tibtn;
+				position: relative;
+				right: 20px;
+				text-decoration: none;
+			}
+			span {
+				@include letra (14px, $gris-tex, bolder);
+			}
+			.panel-default {
+				@include blanquear; 
+			}
+			.panel-heading {
+				@include blanquear; 
+			}
+			.panel-body {
+				@include blanquear; 
+			}
+			.panel-group {
+				@include blanquear; 
+			}
+		}
+	}
+}
+footer {
+	
 }

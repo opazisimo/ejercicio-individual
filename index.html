@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>P e r s o n a</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/a4f2ba36c5.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -27,12 +28,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a class="scroller" href="#header">Home</a></li>
+                    <li><a class="scroller" href="#textoind">Texto individual</a></li>
+                    <li><a class="scroller" href="#video">My Title</a></li>
+                    <li><a class="scroller" href="#define">Me define</a></li>
+                    <li><a class="scroller" href="#bestoffers">Planes</a></li>
+                    <li><a class="scroller" href="#contact">Contact</a></li>
                   </ul>
                   </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -90,16 +91,20 @@
       </div>
     </section>
 <!-- Video -->
-    <section id="video">
+    <section id="video" class="fondo fondo-fixed fondo-2 modulo-alto">
       <section class="oscuro">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="row contis">
+            <div class="titles col-md-6 col-sm-12 col-xs-12">
               <h1><strong>Welcome To <br> My Title</strong></h1>
               <hr class="pull-left"> <br>
               <p class="p-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam a fugit nesciunt. Nulla obcaecati rem veniam, nihil molestiae dolorem delectus consequatur vero officia? Repellat deserunt ratione quibusdam voluptatibus, unde aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempore ipsam impedit similique exercitationem animi, quam ab et voluptates qui, fugiat repudiandae cupiditate modi nemo culpa aspernatur necessitatibus, in ex! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quibusdam, consequatur! Soluta nesciunt, labore ab ex, ipsum hic eaque fugit at incidunt facilis delectus quam consectetur tenetur quaerat provident iste!</p>
               </div>
-            <div class="col-md-6 col-sm-12 col-xs-12"></div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <video width="580" height="320" controls>
+                  <source src="images/video.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </section>
@@ -108,36 +113,172 @@
     <section id="define">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
+          <div class="col-md-12 titu">
+              <h1><strong>Algo Que <br> Me Define</strong></h1>
+              <hr class="pull-left"> <br>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 foto fotosuno">
+            <div class="blanco"></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 contenido">
+            <strong>NOMBRE Y APELLIDO</strong>
+            <p class="cargo">Cargo</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem pariatur sit laboriosam fugit officiis magni, perspiciatis incidunt suscipit, consequatur.</p>
+            <ul class="iconos">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 foto fotosdos">
+            <div class="blanco"></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 contenido">
+            <strong>NOMBRE Y APELLIDO</strong>
+            <p class="cargo">Cargo</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem pariatur sit laboriosam fugit officiis magni, perspiciatis incidunt suscipit, consequatur.</p>
+            <ul class="iconos">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-<!-- Our best offers -->
-    <section id="bestoffers">
-      <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 contenido derecha">
+            <strong>NOMBRE Y APELLIDO</strong>
+            <p class="cargo">Cargo</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem pariatur sit laboriosam fugit officiis magni, perspiciatis incidunt suscipit, consequatur.</p>
+            <ul class="iconos">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 foto fotostres">
+            <div class="blanco"></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 contenido derecha">
+            <strong>NOMBRE Y APELLIDO</strong>
+            <p class="cargo">Cargo</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem pariatur sit laboriosam fugit officiis magni, perspiciatis incidunt suscipit, consequatur.</p>
+            <ul class="iconos">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 foto fotoscuatro">
+            <div class="blanco"></div>
+          </div>
         </div>
       </div>
     </section>
 <!-- Contact Us -->
     <section id="contact">
       <div class="container">
+          <div class="col-md-12 titu">
+              <h1><strong>Contact <br> Us</strong></h1>
+              <hr class="pull-left"> <br>
+          </div>
         <div class="row">
-          <div class="col-md-9 col-sm-12 col-xs-12"></div>
-          <div class="col-md-3 col-sm-12 col-xs-12"></div>
+          <div class="col-md-9 col-sm-12 col-xs-12">
+              <p class="p-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eveniet repudiandae consequatur molestiae quasi dolor iusto.</p>
+              <form>
+                <input class="form-control" type="text" placeholder="Name">
+                <input class="form-control" type="text" placeholder="Email">
+                <input class="form-control" type="text" placeholder="Subject">
+                <textarea class="form-control" rows="6"></textarea>
+                <button class="btn sub">SUBMIT</button>
+              </form>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 sides">
+            <strong>CONTACT INFO</strong> <br><br>
+            <p>Puma 1180 <br>
+            Recoleta, CP 8420200
+            </p><br>
+            <p><strong>EMAIL:</strong>yourmail@yourdomain.com</p>
+            <p><strong>PHONE:</strong>+88 (0) 101 0000 000</p>
+            <p><strong>FAX:</strong>+88 (0) 101 0000 000</p>
+            <br>
+
+            <strong>CONNECT WITH US</strong> <br><br>
+            <ul>
+              <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href=""><i class="fa fa-google-wallet" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          <div class="colapso">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <span class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                      Mostrarse en Público
+                  </span>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <span class="panel-title">
+                    <a href="#collapseTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                      Mostrarse en Privado
+                  </span>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <span class="panel-title">
+                    <a href="#collapseThree" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree">
+                       <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                      Mi Filosofía
+                  </span>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </section>
@@ -151,56 +292,15 @@
         </div>
       </div>
     </footer>
-        ------------
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Collapsible Group Item #1
-              </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
-              </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
-              </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-        </div>
-        <script>
-        $('.dropdown-toggle').dropdown()
-        $('.collapse').collapse()
-        </script>
+<!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="lib/smoothscrolling.jquery.js"></script>
+          <script>
+          $(function() {
+            $("a.scroller").smoothscrolling();
+          })
+          </script>
       </body>
     </html>
